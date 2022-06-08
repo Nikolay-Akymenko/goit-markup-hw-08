@@ -1,0 +1,35 @@
+.footer {
+    display:block;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A; 
+    
+    &__logo {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__title {
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        margin-bottom: 20px;
+    }
+}
+
+.logo--white {
+    color: #ffffff;
+}
+
