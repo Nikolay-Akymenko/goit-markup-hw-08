@@ -1,7 +1,12 @@
 .work__list {
-    display: flex;
-    margin-bottom: 0;
-    list-style: none;
+    display: none;
+
+    @include mq (desktop){
+        display: flex;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
 }
 
 .work__item {
@@ -43,5 +48,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+}
+.work .section__title {
+    display: none;
 
+    @include mq (desktop) {
+        display: block;
+    }
 }
