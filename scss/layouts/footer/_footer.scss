@@ -9,14 +9,32 @@
     &__logo {
         display: block;
         padding-bottom: 20px;
+        text-align: center;
+
+        @include mq (desktop) {
+            text-align: left;
+        }
     }
 
     &__container {
-        display: flex;
+        
         align-items: baseline;
+
+        @include mq (tablet-only){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @include mq (desktop){
+            display: flex;
+        }   
     }
 
     &__title {
+        // 
+        text-align: center;
+        
+        // 
         display: block;
         font-size: 14px;
         line-height: 16px;
@@ -26,7 +44,14 @@
         color: #FFFFFF;
 
         margin-bottom: 20px;
+
+        @include mq (desktop) {
+            display: flex;
+            text-align: left;
+        }
     }
+
+  
 }
 
 .logo--white {

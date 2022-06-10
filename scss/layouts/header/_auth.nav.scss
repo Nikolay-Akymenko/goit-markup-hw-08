@@ -7,6 +7,9 @@
     list-style: none;
     padding: 0;
 
+    @include mq (mobile-only) {
+        display: none;
+    }
 }
 
 .header__auth-item:not(:last-child) {

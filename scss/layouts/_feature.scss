@@ -67,12 +67,12 @@
     letter-spacing: 0.03em;
     width: auto;
 
-    @include mq (mobile) {
+    @include mq (mobile-only) {
         margin-bottom: 30px;
 
     }
 
-    @include mq (tablet) {
+    @include mq (tablet-only) {
         width: 354px;
         margin-bottom: 30px;
     }

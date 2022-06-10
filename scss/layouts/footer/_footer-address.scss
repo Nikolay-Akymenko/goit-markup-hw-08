@@ -1,8 +1,24 @@
 .footer__address {
-    margin-right: 66px;
+    @include mq (tablet-only) {
+        margin-left: 76px;
+        margin-right: 165px;
+    }
+
+    @include mq (desktop) {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        margin-right: 70px;
+        justify-content: left; 
+        
+        
+    }
+    
 }
 
 .address__link {
+    text-align: center;
+    justify-content: center;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     display: block;
@@ -14,9 +30,20 @@
     &:focus {
         color: var(--accent-color);
     }
+
+    @include mq (desktop){
+        text-align: left;
+    }
 }
 
 .address {
+    display: block;
+    // 
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    // 
+
     color: #ffffff;
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -24,6 +51,8 @@
     font-size: 14px;
     line-height: 1.71;
 
-    display: block;
+    @include mq (desktop) {
+        margin-bottom: 0;
+    }
 }
 

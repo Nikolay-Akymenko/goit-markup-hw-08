@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 14px;
@@ -13,7 +14,10 @@
 }
 
 .logo__header {
-    margin-right: 93px;
+     margin-right: 93px;
+     padding-top: 16px;
+     padding-bottom: 16px;
+
 }
 
 .logo--blk {

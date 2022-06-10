@@ -1,12 +1,23 @@
 .footer__join {
-    margin-right: 93px;
+
+    @include mq (desktop) {
+        margin-right: 93px;
+    }
+    
 }
 
 .join__list {
     display: flex;
     align-items: center;
-    justify-content: normal;
+    justify-content: center;
+    
     list-style: none;
+    margin-bottom: 60px;
+
+    @include mq (desktop) {
+        display:flex;
+        justify-content:center;
+    }
 }
 
 .join__item:not(:last-child) {
