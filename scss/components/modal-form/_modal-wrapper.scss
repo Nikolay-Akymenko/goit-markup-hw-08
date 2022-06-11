@@ -50,11 +50,11 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms ease-in-out 200ms, opacity 250ms ease-in-out 200ms;
 
-    @include mq (mobile-only){
-        position: absolute;
-        max-width: 450px;
-        width: 100%;
-    }
+    // @include mq (mobile-only){
+    //     position: absolute;
+    //     max-width: 450px;
+    //     width: 100%;
+    // }
 
     @include mq (desktop) {
         width: 528px;   
