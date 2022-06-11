@@ -2,7 +2,10 @@ body {
     background-color: #FFFFFF;
     color: var(--primary-text-color);
     font-family: var(--main-font);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;   
+}
+body.modal-open {
+    overflow: hidden;
 }
 
 .section {
