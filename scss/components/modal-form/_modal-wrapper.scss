@@ -3,6 +3,8 @@
     top:0;
     left:0;
 
+    padding: 93px 15px;
+    
     width: 100%;
     height: 100%;
     z-index: 100;
@@ -13,14 +15,10 @@
 
     overflow-y: scroll;
 
-    // @include mq (mobile-only) {
-    //     padding: 93px 15px;
-    // }
-
     &.is-hidden {
             opacity: 0;
             visibility: hidden;
-            pointer-events: none;
+            pointer-events: none; 
         }
     
         &.is-hidden .modal-wrapper {
@@ -31,17 +29,22 @@
         &.modal-wrapper {
             transform: translate(-50%, -50%) scale(1);
             opacity: 1;
+            
+        }
+
+        @include mq (mobile-only) {
+            padding: 93px 15px;
         }
 
 }
  
 .modal-wrapper {
     position: absolute;
+    width: 450px;
+    width: 100%;
+
     top: 50%;
     left: 50%;
-
-    width: 450px;
-
     padding: 40px ;
 
     background-color: #ffffff;
@@ -50,13 +53,17 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms ease-in-out 200ms, opacity 250ms ease-in-out 200ms;
 
-    // @include mq (mobile-only){
-    //     position: absolute;
-    //     max-width: 450px;
-    //     width: 100%;
-    // }
-
-    @include mq (desktop) {
-        width: 528px;   
+    @include mq (mobile-only){
+       width: 450px;
     }
+    @include mq (tablet-only) {
+        
+        width: 450px;
+    }
+    @include mq (desktop) {
+    
+        width: 528px;
+    }
+
+   
 }

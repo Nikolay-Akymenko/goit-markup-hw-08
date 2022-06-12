@@ -23,7 +23,7 @@
         <div class="container header__container">
         <nav class="navigation">
         <a class="logo logo__header" href="./index.html">Web<span class="logo__text logo--blk">Studio</span></a>
-        <button type="button" class="menu-button" aria-expanded="false" a data-menu-button>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
             <svg width="40" 
                 height="40" 
                 aria-label="Переключатель мобильного меню">
@@ -32,41 +32,47 @@
             </svg>
         </button>
         <div class="mobile-menu" id="mobile-menu" data-menu>
-            <ul class="mobile-menu__nav">
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Студия</a>
+            <div class="mobile-menu__nav">
+                <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Студия</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Портфолио</a>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Портфолио</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Контакты</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__contacts">
-                <li class="mobile-menu__items">
-                    <a href="tel:+380961111111" class="mobile-menu__link">+38 096 111 11 11</a>
-                </li>
-                <li class="mobile-menu__items">
-                    <a href="mailto:info@devstudio.com" class="mobile-menu__link">info@devstudio.com</a>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Контакты</a>
                 </li>
             </ul>
-            <ul class="mobile-menu__socials">
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Instagram</a>
+            </div>
+            <div class="mobile-menu__contacts">
+                <ul class="contacts__list">
+                <li class="contacts__items">
+                    <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Twitter</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">Facebook</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link">LinkedIn</a>
+                <li class="contacts__items">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
                 </li>
             </ul>
+            </div>
+            <div class="mobile-menu__socials">
+                <ul class="mobile-menu-socials__list">
+                <li class="mobile-menu-socials__item">
+                    <a href="" class="mobile-menu-socials__link">Instagram</a>
+                </li>
+                <li class="mobile-menu-socials__item">
+                    <a href="" class="mobile-menu-socials__link">Twitter</a>
+                </li>
+                <li class="mobile-menu-socials__item">
+                    <a href="" class="mobile-menu-socials__link">Facebook</a>
+                </li>
+                <li class="mobile-menu-socials__item">
+                    <a href="" class="mobile-menu-socials__link">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
         </div>
-        <ul class="navigation__list">
+        <!-- <ul class="navigation__list">
             <li class="navigation__item">
                 <a href="./index.html" class="navigation__link navigation__link--current">Cтудия</a>
             </li>
@@ -93,7 +99,7 @@
                     </svg> +38 096 111 11 11</a>
             </li>
         </ul>
-        </div>
+        </div> -->
     </header>
     <!--Контент-->
     <main>
