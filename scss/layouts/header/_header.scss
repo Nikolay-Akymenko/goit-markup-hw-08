@@ -10,13 +10,21 @@
     &__container {
         display: flex;
         align-items: center;
+
     }
 }
 
 .logo__header {
-     margin-right: 93px;
      padding-top: 16px;
      padding-bottom: 16px;
+
+     @include mq (tablet-only){
+        margin-right: 88px;
+     }
+
+     @include mq (desktop){
+        margin-right: 93px;
+     }
 
 }
 
