@@ -243,7 +243,15 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="img" src="./images/teamcard/img1.jpg" alt="Product Designer" width="270" height="260">
+                    <img class="img"
+                        srcset="
+                        ./images/teamcard/img1_sm.jpg    1x,
+                        ./images/teamcard/img1_sm@2x.jpg 2x
+                        "
+                        src="./images/teamcard/img1_sm.jpg" 
+                        alt="Product Designer"
+                        width="450"
+                        height="460">
                     <div class="team__description">
                     <p class="team__name">Игорь Демьяненко</p>
                     <p class="team__text">Product Designer</p>
