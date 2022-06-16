@@ -9,11 +9,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
-    }
-
-    @include mq (desktop){
-        display: flex;
-    }   
+    } 
 }
 
 .team__item { 
@@ -27,17 +23,21 @@
         }  
     }
     @include mq (tablet) {
-        // margin: 15px;
-        // width: calc((100% - 2 * 30 ) / 2);
+        width: 354px;
+        margin: 15px;
+        width: calc((100% - 2 * 30 ) / 2);
        
     }
 
     @include mq (desktop){
-        margin-right: 30px;
+        width: 270px;
+        margin: 15px;
+        width: calc((100% - 4 * 30) / 4);
+        // margin-right: 30px;
         
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
+        // &:nth-child(4n) {
+        //     margin-right: 0;
+        // }
     }   
 }
 
