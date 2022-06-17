@@ -23,15 +23,21 @@
         <div class="container header__container">
         <nav class="navigation">
         <a class="logo logo__header" href="./index.html">Web<span class="logo__text logo--blk">Studio</span></a>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+        <button class="menu-toggle js-open-menu" 
+        aria-expanded="false" 
+        aria-controls="mobile-menu">
             <svg width="40" 
                 height="40" 
                 aria-label="Переключатель мобильного меню">
-                <use class="icon-cross" href="./images/sprite.svg#cross"></use>
                 <use class="icon-menu" href="./images/sprite.svg#menu"></use>
             </svg>
         </button>
-        <div class="mobile-menu" id="mobile-menu" data-menu>
+        <div class="menu-container js-menu-container" 
+        id="mobile-menu">
+            <button class="mobile-menu menu-toggle js-close-menu">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+                </svg>
             <div class="mobile-menu__nav">
                 <ul class="navigation__list">
                 <li class="navigation__item">
@@ -80,7 +86,8 @@
             </div>
             </div>
         </div>
-        <!-- <ul class="navigation__list">
+        <!-- <div>
+        <ul class="navigation__list">
             <li class="navigation__item">
                 <a href="./index.html" class="navigation__link navigation__link--current">Cтудия</a>
             </li>
@@ -223,15 +230,66 @@
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="work__list">
                 <li class="work__item">
-                    <img class="work__img img" src="./images/box/box1.jpg" alt="iPad c клавиатурой" width="370" height="294"/>
+                    <picture>
+                        <source media="(min-width:1200px)"
+                            srcset="
+                            ./images/box/img1_lg.webp 1x,
+                            ./images/box/img1_lg@2x.webp 2x" 
+                            type="image/webp">
+                        <source media="(min-width:1200px)" 
+                            srcset="
+                            ./images/box/img1_lg.jpg 1x,
+                            ./images/box/img1_lg@2x.jpg 2x" 
+                            type="image/jpg">
+                    <img class="work__img img"
+                        src="./images/box/img1_lg.jpg"
+                        alt="iPad c клавиатурой" 
+                        width="370" 
+                        height="294"
+                        loading="lazy">
+                    </picture>
                     <p class="work__img-text">Десктопные приложения</p>
                    </li>
                 <li class="work__item">
-                    <img class="work__img imgwork__img " src="./images/box/box2.jpg" alt="Работа за ноутбуком" width="370" height="294"/>
+                    <picture>
+                        <source media="(min-width:1200px)" 
+                            srcset="
+                                ./images/box/img2_lg.webp 1x,
+                                ./images/box/img2_lg@2x.webp 2x" 
+                            type="image/webp">
+                        <source media="(min-width:1200px)" 
+                            srcset="
+                                ./images/box/img2_lg.jpg 1x,
+                                ./images/box/img2_lg@2x.jpg 2x" 
+                            type="image/jpg">
+                        <img class="work__img imgwork__img "
+                             src="./images/box/img2_lg.jpg" 
+                             alt="Работа за ноутбуком" 
+                             width="370" 
+                             height="294"
+                             loading="lazy">
+                    </picture>
                     <p class="work__img-text">Мобильные приложения</p>
                 </li>
                 <li class="work__item">
-                    <img class="work__img img" src="./images/box/box3.jpg" alt="выбор цвета на iPad " width="370" height="294"/>
+                    <picture>
+                        <source media="(min-width:1200px)" 
+                            srcset="
+                                ./images/box/img3_lg.webp 1x,
+                                ./images/box/img3_lg@2x.webp 2x" 
+                            type="image/webp">
+                        <source media="(min-width:1200px)" 
+                            srcset="
+                                ./images/box/img3_lg.jpg 1x,
+                                ./images/box/img3_lg@2x.jpg 2x" 
+                            type="image/jpg">
+                        <img class="work__img img" 
+                            src="./images/box/img3_lg.jpg" 
+                            alt="выбор цвета на iPad " 
+                            width="370" 
+                            height="294"
+                            loading="lazy">
+                    </picture>
                     <p class="work__img-text">Мобильные приложения</p>
                 </li>
             </ul>
@@ -674,8 +732,12 @@
         </div>   
     </footer>
 
-
-    <script src="./js/menu.js"></script>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+     <script defer src="js/mobile-menu.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
     <script src="./js/modal.js"></script>
 </body>
 
