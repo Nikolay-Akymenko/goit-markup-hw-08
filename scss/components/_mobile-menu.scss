@@ -35,20 +35,28 @@
 // }
 
 .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 40px;
-    background-color: aqua;
-    z-index: 100;
+    @include mq (mobile-only) {
+            position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                padding: 40px;
+                background-color: aqua;
+                z-index: 100;
+            
+                transform: translateX(100%);
+                transition: transform 250ms ease-in-out;
+            
+                &.is-open {
+                    transform: translateX(0);
+                }
+    }
 
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
 
+    @include mq (tablet) {
+        display: flex;
+        align-items: center;
+    }    
 }
 
-.menu-container.is-open {
-    transform: translateX(0);
-}
