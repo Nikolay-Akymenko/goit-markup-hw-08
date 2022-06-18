@@ -1,34 +1,10 @@
+@include mq (mobile-only){
+
+}
 .menu-contacts {
-    
-    // @include mq (mobile-only){
-    //     display: none;
-    //     margin-bottom: 32px;
-        
-    //         &__list {
-    //             display: flex;
-    //             flex-direction: column-reverse;
-    //             list-style: none;
-    //         }        
-
-    //         &__items{
-    //             margin-bottom: 32px;   
-    //         }
-        
-    //         &__link {
-    //             text-decoration: none;
-    //             font-size: 24px;
-    //             color: currentColor;
-
-    //         }
-        
-    //         &__link--number {
-    //             font-size: 34px;
-    //             line-height: 40px;
-    //             letter-spacing: 0.02em;
-    //             color: var(--accent-color);
-        
-    //         }
-    // }
+    @include mq (mobile-only) {
+        display: none;
+    }
 
     @include mq (tablet){
         display:flex;
@@ -108,12 +84,6 @@
     }
 }
 
-// @include mq (mobile-only){
-//     .menu-contacts {
-//         display: none;
-//     }
-// }
-.mobile-menu-contacts
 
 
 

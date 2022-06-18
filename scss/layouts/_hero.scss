@@ -5,6 +5,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
+
     &__title {
             margin: auto;
             width: 696px;
@@ -20,7 +21,7 @@
             text-transform: uppercase;
 
             @include mq (mobile-only) {
-                width: 360px;
+                width: 100%;
 
                 font-size: 26px;
                 line-height: 1.62;
