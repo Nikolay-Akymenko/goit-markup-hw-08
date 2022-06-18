@@ -6,10 +6,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    padding: px;
-    background-color: rgb(143, 22, 22);
+    padding: 48px 40px;
+    background-color: #ffffff;
     z-index: 999;
 
     transform: translateX(100%);
@@ -18,13 +18,7 @@
     &.is-open {
         transform: translateX(0);            
     }
-
-
-
-    @include mq (tablet) {
-        display: flex;
-        align-items: center;
-    }    
+ 
 }
 // Navigation
 
@@ -104,9 +98,11 @@
 .mobile-menu-socials {
 
     position: relative;
+   
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
     }
 
