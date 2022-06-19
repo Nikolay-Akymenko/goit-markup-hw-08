@@ -1,3 +1,11 @@
+.work.section {
+    @include mq (mobile-only){
+        padding-top: 0;
+    }
+    @include mq (tablet-only){
+        padding-top: 0;
+    }
+}
 .work__list {
     display: none;
 

@@ -18,11 +18,23 @@
 }
 
 .feature__item {
-    @include mq (tablet) {
+
+    @include mq (mobile-only){
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+         
+    }
+    @include mq (tablet-only) {
         &:nth-child(1),
         &:nth-child(3) {
             margin-right: 30px;
         }
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+
     }
     @include mq (desktop) {
         margin-right: 30px;
@@ -67,14 +79,11 @@
     letter-spacing: 0.03em;
     width: auto;
 
-    @include mq (mobile-only) {
-        margin-bottom: 30px;
-
-    }
+  
 
     @include mq (tablet-only) {
         width: 354px;
-        margin-bottom: 30px;
+       
     }
 
     @include mq (desktop) {

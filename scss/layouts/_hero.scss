@@ -2,8 +2,16 @@
     background-color: #2F303A;
     text-align: center;
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+
+    @include mq (desktop) {
+        padding-top: 200px;
+        padding-botton: 200px;
+    }
+
+
 
 
     &__title {
@@ -31,7 +39,8 @@
             }
 
             @include mq (tablet-only){
-                font-size: 44px;
+                font-size: 26px;
+                width: 360px;
                 line-height: 1.36;
                 text-align: center;
                 letter-spacing: 0.06em;

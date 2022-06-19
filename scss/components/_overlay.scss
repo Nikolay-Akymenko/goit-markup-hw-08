@@ -9,29 +9,36 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include mq (mobile-only) {
+        height: 400px;
+    }
+    @include mq (tablet-only) {
+        height: 400px;
+    }
+
     background-image: 
         linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url("/images/hero/hero_sm.jpg");
+        url("../images/hero/hero_sm.jpg");
         
     background-image:
             linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-            -webkit-image-set(url("/images/hero/hero_sm.webp") 1x);
+            -webkit-image-set(url("../images/hero/hero_sm.webp") 1x);
 
         @include mq (retina) {
             background-image:
                 linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url("/images/hero/hero_sm@2x.jpg");
+                url("../images/hero/hero_sm@2x.jpg");
             background-image:
                 linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                -webkit-image-set(url("/images/hero/hero_sm@2x.webp") 2x);
+                -webkit-image-set(url("../images/hero/hero_sm@2x.webp") 2x);
         }
 
         @include mq (tablet) {
@@ -39,24 +46,24 @@
             linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url("/images/hero/hero_md.jpg");
+            url("../images/hero/hero_md.jpg");
             background-image:
                 linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                -webkit-image-set(url("/images/hero/hero_md.webp") 1x);
+                -webkit-image-set(url("../images/hero/hero_md.webp") 1x);
 
                     @include mq (retina) {
                         background-image:
                             linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            url("/images/hero/hero_md@2x.jpg");
+                            url("../images/hero/hero_md@2x.jpg");
                         background-image: 
                             linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            -webkit-image-set(url("/images/hero/hero_md@2x.webp") 2x);
+                            -webkit-image-set(url("../images/hero/hero_md@2x.webp") 2x);
                         }
         }
 
@@ -65,24 +72,24 @@
                 linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                 url("/images/hero/hero_lg.jpg");
+                 url("../images/hero/hero_lg.jpg");
             background-image:
                 linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                 -webkit-image-set(url("/images/hero/hero_lg.webp") 1x);
+                 -webkit-image-set(url("../images/hero/hero_lg.webp") 1x);
 
                     @include mq (retina) {
                         background-image:
                             linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                            url("/images/hero/hero_lg@2x.jpg");
+                            url("../images/hero/hero_lg@2x.jpg");
                         background-image:
                             linear-gradient(to right,
                                 rgba(47, 48, 58, 0.4),
                                 rgba(47, 48, 58, 0.4)),
-                             -webkit-image-set(url("/images/hero/hero_lg@2x.webp") 2x);
+                             -webkit-image-set(url("../images/hero/hero_lg@2x.webp") 2x);
                         }
         }
 
